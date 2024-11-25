@@ -18,4 +18,4 @@ class GetComp(BaseClass):
         statuses = ["ACTIVE", "CLOSED", "BANKRUPT"]
         for status in statuses:
             self.get_comp(params={'status': status})
-            assert all(i['company_status'] == status for i in self.response_json["data"])
+            assert all(i['company_status'] == status for i in self.response_json["data"]), 'Unexpected company status'
