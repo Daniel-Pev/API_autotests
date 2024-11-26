@@ -5,7 +5,6 @@ from endpoints.post_auth import PostAuth
 from endpoints.post_user import PostUser
 
 
-# positive_tests
 def test_get_comp():
     comp = GetComp()
     comp.get_comp()
@@ -29,6 +28,7 @@ def test_post_user():
 
 def test_post_auth():
     auth = PostAuth()
+    auth.post_auth()
     auth.check_status_code(200)
     auth.check_token()
 
@@ -38,3 +38,4 @@ def test_get_auth():
     auth.get_auth()
     auth.check_status_code(200)
     auth.check_empty_token()
+    auth.check_invalid_token()

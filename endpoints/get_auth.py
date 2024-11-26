@@ -20,16 +20,12 @@ class GetAuth(BaseClass):
             'Unexpected string in reason'
         assert self.response.status_code == 401, 'Unexpected statuscode'
 
-    # def check_invalid_token(self):
-    #     self.response = requests.get(url=f'{Cfg.URL}/auth/me',
-    #                                  headers={"x-token": Cfg.INVALID_TOKEN})
-    #     print(self.response_json)
-    #     assert self.response_json['detail']['reason'] == 'Token is incorrect. Please login and try again', \
-    #         'Unexpected string in reason'
-    #     assert self.response.status_code == 403, 'Unexpected statuscode'
+    def check_invalid_token(self):
+        self.response = requests.get(url=f'{Cfg.URL}/auth/me', json=Cfg.AUTHORIZE,
+                                     headers={
+                                         'Content-Type': 'application/json',
+                                         'x-token': Cfg.INVALID_TOKEN
+                                     })
+        assert self.response.status_code == 403, 'Unexpected statuscode'
 
-
-user = GetAuth()
-user.get_auth()
-user.check_empty_token()
 

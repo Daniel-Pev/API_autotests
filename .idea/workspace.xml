@@ -4,29 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b993b708-055a-4335-a76c-1e3c81258bd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Api_autotests.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/conf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/endpoints/base_class.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/endpoints/delete_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/endpoints/get_comp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/endpoints/get_user_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/endpoints/get_users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/endpoints/post_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/endpoints/put_user.py" afterDir="false" />
+    <list default="true" id="b993b708-055a-4335-a76c-1e3c81258bd2" name="Changes" comment="add auth">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/get_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/get_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -40,13 +49,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_api.test_get_auth.executor": "Run",
     "Python tests.Python tests for test_api.test_get_comp.executor": "Run",
     "Python tests.Python tests for test_api.test_get_users.executor": "Run",
+    "Python tests.Python tests for test_api.test_post_auth.executor": "Run",
     "Python tests.Python tests for test_api.test_post_user.executor": "Run",
     "Python tests.Python tests in Api_autotests (1).executor": "Run",
     "Python tests.Python tests in Api_autotests.executor": "Run",
     "Python tests.Python tests in test_api.py.executor": "Run",
     "Python.conftest.executor": "Run",
+    "Python.get_auth.executor": "Run",
+    "Python.post_auth.executor": "Run",
+    "Python.to_del.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
@@ -59,8 +73,8 @@
       <recent name="C:\PythonProjects\Api_autotests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in Api_autotests (1)">
-    <configuration name="conftest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in test_api.py">
+    <configuration name="get_auth" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Api_autotests" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,11 +83,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/endpoints" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/conftest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/endpoints/get_auth.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,7 +96,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in Api_autotests (1)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_api.test_get_auth" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Api_autotests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.test_get_auth&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_api.test_get_users" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Api_autotests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.test_get_users&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_api.test_post_auth" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Api_autotests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.test_post_auth&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in Api_autotests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Api_autotests" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,22 +153,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in Api_autotests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Api_autotests" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (Api_autotests)" />
-      <option name="WORKING_DIRECTORY" value="C:\PythonProjects\Api_autotests" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;C:\\PythonProjects\\Api_autotests&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -129,17 +172,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.conftest" />
-      <item itemvalue="Python tests.Python tests in Api_autotests (1)" />
+      <item itemvalue="Python.get_auth" />
+      <item itemvalue="Python tests.Python tests for test_api.test_get_auth" />
+      <item itemvalue="Python tests.Python tests for test_api.test_post_auth" />
+      <item itemvalue="Python tests.Python tests for test_api.test_get_users" />
       <item itemvalue="Python tests.Python tests in test_api.py" />
-      <item itemvalue="Python tests.Python tests in Api_autotests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in Api_autotests (1)" />
         <item itemvalue="Python tests.Python tests in test_api.py" />
-        <item itemvalue="Python tests.Python tests in Api_autotests" />
-        <item itemvalue="Python.conftest" />
+        <item itemvalue="Python tests.Python tests for test_api.test_get_auth" />
+        <item itemvalue="Python.get_auth" />
+        <item itemvalue="Python tests.Python tests for test_api.test_post_auth" />
+        <item itemvalue="Python tests.Python tests for test_api.test_get_users" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +204,36 @@
       <option name="presentableId" value="Default" />
       <updated>1732541721838</updated>
     </task>
+    <task id="LOCAL-00001" summary="main">
+      <option name="closed" value="true" />
+      <created>1732547575371</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732547575371</updated>
+    </task>
+    <task id="LOCAL-00002" summary="main">
+      <option name="closed" value="true" />
+      <created>1732547664639</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732547664639</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add auth">
+      <option name="closed" value="true" />
+      <created>1732565857991</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732565857991</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="main" />
+    <MESSAGE value="add auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="add auth" />
   </component>
 </project>

@@ -23,6 +23,5 @@ class GetUsers(BaseClass):
             assert isinstance(user_data["user_id"], int), 'Unexpected user_id type'
         assert len(self.response_json["data"]) == 3, 'Unexpected users count'
 
-    def neg_params(self):
-        self.get_users(params={})
+
 

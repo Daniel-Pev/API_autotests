@@ -1,8 +1,3 @@
-import requests
-
-from endpoints.post_auth import PostAuth
-
-
 class Cfg:
     URL = 'https://restapi.tech/api'
     BODY = {
@@ -15,8 +10,5 @@ class Cfg:
         "password": "qwerty12345",  # Password mustn't be changed
         "timeout": 360  # Enter valid token timeout
     }
-
-    response = requests.post(url=f'{URL}/auth/authorize', json=AUTHORIZE)
-    response_json = response.json()
-    TOKEN = response_json['token'] # Enter valid token
-    INVALID_TOKEN = 'rrqwdqwdq'  # Enter invalid token
+    TOKEN = 'd29yPrOsEzHem61pAdNO7rE8pm9Wezyw'  # Enter valid token
+    INVALID_TOKEN = 'mrglmrlrmvlem,lerve'  # Enter invalid token
